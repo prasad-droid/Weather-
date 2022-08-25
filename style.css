@@ -1,0 +1,146 @@
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        /* background: url(look-up-at-the-sky-day-1.webp) center/cover no-repeat; */
+        background: url('https://source.unsplash.com/random/?desktop-morning-cloud') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .container{
+        width:70% ;
+        height: 90vh;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    main{
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+    .d2{
+        width: 8.784773060029282vw;
+    } 
+
+
+
+    main h1{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2.781844802342606vw;
+        width: fit-content  ;
+    }
+    .temp{
+        display: flex;
+        font-size: 5.856515373352855vw;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    .decs{
+        display: flex;
+        font-size: 1.4055636896046853vw;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width:  10.248901903367496vw;
+    }
+    h6{
+        background: orange;
+        border-radius: 15px;
+        color: white;
+        min-width: 1.4641288433382138vw;
+        height: 2.4vh;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 0.7027818448023426vw;
+    } 
+    .search{
+        background: rgba(24, 24, 24, 0.75);
+        backdrop-filter: blur( 16px );
+        -webkit-backdrop-filter: blur( 16px );
+        width: 30%;
+        height: 100vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    .searchbar{
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    input{
+        background: none;
+        padding: 5px;
+        width: 80% ;
+        border: none;
+        border-bottom: 1px solid grey;
+        outline: none;
+        font-size: 1.7569546120058566vw;
+        color: white;
+    }
+    input::placeholder{
+        color: white;
+    }
+    .fa-magnifying-glass{
+        float: right;
+        font-size: 1.8301610541727673vw;
+        color: white;
+    }
+    .recent{
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        color: lightgrey;
+        align-items: left;
+        font-size:1.4055636896046853vw;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        gap: 15px;
+        font-family: sans-serif;
+        cursor: pointer;
+    }
+    .more{
+        border-top: 1px solid grey;
+        width: 85% ;
+        margin-left: 5%;
+        padding-top: 10px;
+    }
+    .more span{
+        color:white;
+        font-family: sans-serif;
+        font-size:  1.7569546120058566vw;
+    }
+    .details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: lightgrey;
+        gap: 15px;
+        margin-top: 15px;
+        font-size:  1.4055636896046853vw;
+    }
+
+    #cloudy,#humidity,#wind,#pressure,#min,#max{
+        text-align: right;
+    }
+    @media screen and (max-width: 320px) {
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        #main {margin-left: 216px;}
+      }
