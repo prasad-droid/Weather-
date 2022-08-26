@@ -34,19 +34,19 @@
     main h1{
         color: white;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 2.781844802342606vw;
+        font-size: 38px;
         width: fit-content  ;
     }
     .temp{
         display: flex;
-        font-size: 5.856515373352855vw;
+        font-size: 500%;
         color: white;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     }
     .decs{
         display: flex;
-        font-size: 1.4055636896046853vw;
+        font-size: 125%;
         color: white;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         width:  10.248901903367496vw;
@@ -59,7 +59,7 @@
         height: 2.4vh;
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 0.7027818448023426vw;
+        font-size: 62.5%;
     } 
     .search{
         background: rgba(24, 24, 24, 0.75);
@@ -68,13 +68,14 @@
         width: 30%;
         height: 100vh;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+        
     }
     .searchbar{
         height: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
+    
     }
     button{
         background: none;
@@ -89,7 +90,7 @@
         border: none;
         border-bottom: 1px solid grey;
         outline: none;
-        font-size: 1.7569546120058566vw;
+        font-size: 156.25%;
         color: white;
     }
     input::placeholder{
@@ -97,17 +98,17 @@
     }
     .fa-magnifying-glass{
         float: right;
-        font-size: 1.8301610541727673vw;
+        font-size: 30px;
         color: white;
     }
     .recent{
-        height:auto;
+        height: 35%;
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
         color: lightgrey;
         align-items: left;
-        font-size:1.4055636896046853vw;
+        font-size:20px;
         margin-left: 5%;
         margin-bottom: 5%;
         gap: 15px;
@@ -115,6 +116,7 @@
         cursor: pointer;
     }
     .more{
+        height: 35%;
         border-top: 1px solid grey;
         width: 85% ;
         margin-left: 5%;
@@ -123,7 +125,7 @@
     .more span{
         color:white;
         font-family: sans-serif;
-        font-size:  1.7569546120058566vw;
+        font-size: 156.25%;
     }
     .details{
         display: grid;
@@ -131,16 +133,57 @@
         color: lightgrey;
         gap: 15px;
         margin-top: 15px;
-        font-size:  1.4055636896046853vw;
+        font-size:  125%;
     }
 
     #cloudy,#humidity,#wind,#pressure,#min,#max{
         text-align: right;
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 850px) {
         body{
             display: flex;
             flex-direction: column;
         }
-        #main {margin-left: 216px;}
-      }
+        .container{
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            width: 50%;
+        }
+        .searchbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .search{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .recent{
+            display: none;
+        }
+        .more{
+            width: 90%;
+            gap: 10px;
+            border: none;
+        }
+        h6{
+            display: none;
+        }
+    }   
+    @media screen and (max-width: 500px){
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+        .d2{
+            display: flex;
+        }
+     
+    }
